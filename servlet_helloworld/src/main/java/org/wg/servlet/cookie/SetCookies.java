@@ -1,24 +1,23 @@
 package org.wg.servlet.cookie;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * 设置Cookie到客户端
- * @author jukey
  *
+ * @author jukey
  */
 public class SetCookies extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 向客户端写入Cookie，共6个
-        for(int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             // 3个没有设置时间的Cookie，属于本窗口及其子窗口
             Cookie cookie = new Cookie("Session-Cookie-" + i, "Cookie-Value-S" + i);
             response.addCookie(cookie);
@@ -27,7 +26,7 @@ public class SetCookies extends HttpServlet {
             cookie.setMaxAge(3600);
             response.addCookie(cookie);
         }
-        
+
         response.setContentType("text/html;charset=gb2312");
         PrintWriter out = response.getWriter();
         String title = "Setting Cookies";
