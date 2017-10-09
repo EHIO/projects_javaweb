@@ -6,23 +6,23 @@
     <display-name></display-name>
     <servlet>
         <servlet-name>Upload1Servlet</servlet-name>
-        <servlet-class>org.wg.servlet.upload.Upload1Servlet</servlet-class>
+        <servlet-class>org.wg.upload.Upload1Servlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Upload2Servlet</servlet-name>
-        <servlet-class>org.wg.servlet.upload.Upload2Servlet</servlet-class>
+        <servlet-class>org.wg.upload.Upload2Servlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Upload3Servlet</servlet-name>
-        <servlet-class>org.wg.servlet.upload.Upload3Servlet</servlet-class>
+        <servlet-class>org.wg.upload.Upload3Servlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>FileUploadServlet</servlet-name>
-        <servlet-class>org.wg.servlet.upload.FileUploadServlet</servlet-class>
+        <servlet-class>org.wg.upload.FileUploadServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>DownloadServlet</servlet-name>
-        <servlet-class>org.wg.servlet.download.DownloadServlet</servlet-class>
+        <servlet-class>org.wg.download.DownloadServlet</servlet-class>
     </servlet>
 
 

@@ -18,7 +18,7 @@
 
     <servlet>
         <servlet-name>OneServlet</servlet-name>
-        <servlet-class>org.wg.servlet.OneServlet</servlet-class>
+        <servlet-class>org.wg.OneServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>OneServlet</servlet-name>
@@ -26,7 +26,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>TwoServlet</servlet-name>
-        <servlet-class>org.wg.servlet.TwoServlet</servlet-class>
+        <servlet-class>org.wg.TwoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TwoServlet</servlet-name>

@@ -5,7 +5,7 @@
     <display-name></display-name>
     <servlet>
         <servlet-name>AServlet</servlet-name>
-        <servlet-class>org.wg.servlet.response.AServlet</servlet-class>
+        <servlet-class>org.wg.response.AServlet</servlet-class>
         <!--服务器启动就创建-->
         <load-on-startup>0</load-on-startup>
     </servlet>
@@ -15,7 +15,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>BServlet</servlet-name>
-        <servlet-class>org.wg.servlet.response.BServlet</servlet-class>
+        <servlet-class>org.wg.response.BServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>BServlet</servlet-name>
@@ -23,7 +23,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>CServlet</servlet-name>
-        <servlet-class>org.wg.servlet.response.CServlet</servlet-class>
+        <servlet-class>org.wg.response.CServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CServlet</servlet-name>
@@ -31,7 +31,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>DServlet</servlet-name>
-        <servlet-class>org.wg.servlet.response.DServlet</servlet-class>
+        <servlet-class>org.wg.response.DServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>DServlet</servlet-name>
@@ -39,7 +39,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>EServlet</servlet-name>
-        <servlet-class>org.wg.servlet.response.EServlet</servlet-class>
+        <servlet-class>org.wg.response.EServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>EServlet</servlet-name>
@@ -47,7 +47,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>FServlet</servlet-name>
-        <servlet-class>org.wg.servlet.response.FServlet</servlet-class>
+        <servlet-class>org.wg.response.FServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>FServlet</servlet-name>
@@ -55,7 +55,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>GServlet</servlet-name>
-        <servlet-class>org.wg.servlet.response.GServlet</servlet-class>
+        <servlet-class>org.wg.response.GServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>GServlet</servlet-name>
@@ -66,7 +66,7 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>HServlet</servlet-name>
-        <servlet-class>org.wg.servlet.request.HServlet</servlet-class>
+        <servlet-class>org.wg.request.HServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>HServlet</servlet-name>
@@ -74,7 +74,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>IServlet</servlet-name>
-        <servlet-class>org.wg.servlet.request.IServlet</servlet-class>
+        <servlet-class>org.wg.request.IServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>IServlet</servlet-name>
@@ -82,7 +82,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>JServlet</servlet-name>
-        <servlet-class>org.wg.servlet.request.JServlet</servlet-class>
+        <servlet-class>org.wg.request.JServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>JServlet</servlet-name>
@@ -90,7 +90,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>TestRequestParameterServlet</servlet-name>
-        <servlet-class>org.wg.servlet.request.TestRequestParameterServlet</servlet-class>
+        <servlet-class>org.wg.request.TestRequestParameterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TestRequestParameterServlet</servlet-name>
@@ -98,7 +98,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>KServlet</servlet-name>
-        <servlet-class>org.wg.servlet.forward.KServlet</servlet-class>
+        <servlet-class>org.wg.forward.KServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>KServlet</servlet-name>
@@ -106,7 +106,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>LServlet</servlet-name>
-        <servlet-class>org.wg.servlet.forward.LServlet</servlet-class>
+        <servlet-class>org.wg.forward.LServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LServlet</servlet-name>
@@ -114,7 +114,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>MServlet</servlet-name>
-        <servlet-class>org.wg.servlet.include.MServlet</servlet-class>
+        <servlet-class>org.wg.include.MServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MServlet</servlet-name>
@@ -122,7 +122,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>OServlet</servlet-name>
-        <servlet-class>org.wg.servlet.include.OServlet</servlet-class>
+        <servlet-class>org.wg.include.OServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>OServlet</servlet-name>
@@ -130,7 +130,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>EncodeServlet</servlet-name>
-        <servlet-class>org.wg.servlet.encode.EncodeServlet</servlet-class>
+        <servlet-class>org.wg.encode.EncodeServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>EncodeServlet</servlet-name>
@@ -138,7 +138,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>SetCookies</servlet-name>
-        <servlet-class>org.wg.servlet.cookie.SetCookies</servlet-class>
+        <servlet-class>org.wg.cookie.SetCookies</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>SetCookies</servlet-name>
@@ -146,7 +146,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ShowCookies</servlet-name>
-        <servlet-class>org.wg.servlet.cookie.ShowCookies</servlet-class>
+        <servlet-class>org.wg.cookie.ShowCookies</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ShowCookies</servlet-name>
@@ -154,7 +154,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>org.wg.servlet.session.LoginServlet</servlet-class>
+        <servlet-class>org.wg.session.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
@@ -162,7 +162,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>JsessionIdServlet</servlet-name>
-        <servlet-class>org.wg.servlet.session.JsessionIdServlet</servlet-class>
+        <servlet-class>org.wg.session.JsessionIdServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>JsessionIdServlet</servlet-name>
@@ -170,7 +170,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>MultipleRequestsServlet</servlet-name>
-        <servlet-class>org.wg.servlet.utils.MultipleRequestsServlet</servlet-class>
+        <servlet-class>org.wg.utils.MultipleRequestsServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MultipleRequestsServlet</servlet-name>
@@ -178,7 +178,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>MultipleRequestsServlet2</servlet-name>
-        <servlet-class>org.wg.servlet.utils.MultipleRequestsServlet2</servlet-class>
+        <servlet-class>org.wg.utils.MultipleRequestsServlet2</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MultipleRequestsServlet2</servlet-name>
