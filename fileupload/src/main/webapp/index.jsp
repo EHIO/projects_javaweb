@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%
     String path = request.getContextPath();
@@ -22,5 +23,10 @@
 
 <body>
 This is my JSP page. <br>
+<a href="upload1.jsp">上传1</a> <br>
+<a href="upload2.jsp">上传2</a> <br>
+<a href="upload3.jsp">上传3</a> <br>
+<a href="upload4.jsp">上传4</a> <br>
+<a href="SWFUploadPic.jsp">上传5</a>
 </body>
 </html>
