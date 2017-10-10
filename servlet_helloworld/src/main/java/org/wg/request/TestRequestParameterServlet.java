@@ -11,10 +11,9 @@ import java.util.Map;
 
 /**
  * 演示request获取请求参数！
- *
- * @author cxf
  */
 public class TestRequestParameterServlet extends HttpServlet {
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         System.out.println("GET: " + request.getParameter("xxx"));
