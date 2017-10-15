@@ -20,7 +20,7 @@
 <h3>${msg }</h3>
 <form action="<c:url value='/fileUpload/upload.action'/>" method="post" enctype="multipart/form-data">
     <%--用户名；<input type="text" name="username"/><br/>--%>
-    照　片：<input type="file" name="zhaoPian"/><br/>
+    照　片：<input type="file" name="image"/><br/>
     <input type="submit" value="上传"/>
 </form>
 </body>

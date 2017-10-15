@@ -14,22 +14,20 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     -->
 
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/asset/js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="/asset/js/control/SWFUpload/swfupload.js"></script>
     <script type="text/javascript" src="/asset/js/common/uploadImage.js"></script>
 </head>
 
 <body>
-<h1>SpringMVC实现上传</h1>
+<h1>SWFUpload实现上传</h1>
 <h3>${msg }</h3>
-<form action="<c:url value='/fileUpload/upload.action'/>" method="post">
-    用户名；<input type="text" name="username"/><br/>
     照　片：
         <%--<div id="swfu-placeholder"></div><!--swfupload文件选择按钮占位符，执行下面的js后，这里将被替换成swfupload上传按钮-->
         <div><input type="button" onclick="swfu.startUpload();" value="上传" /></div>--%>
         <input type="button" value="浏览..."  id="thumbnailBtn">
         <input type="hidden" id="thumbnail" name="thumbnail" value="${items.pic}" >
-        <img id="thumbnail_img" src="/pic/${items.pic}" width=100 height=100 />
+        <img id="thumbnail_img" src="" width=100 height=100 />
         <%--
         <div class="pic-show" id="goodthumbmailImage">
             <div id="goodparemes">
@@ -39,8 +37,6 @@
             </div>
         </div>
         --%>
-    <input type="submit" value="上传"/>
-</form>
 </body>
 <script>
     $(document).ready(function () {
