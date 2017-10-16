@@ -430,8 +430,9 @@ public class ImageUtil {
         int x = 0;
         int y = 0;
         degree = degree % 360;
-        if (degree < 0)
+        if (degree < 0) {
             degree = 360 + degree;//将角度转换到0-360度之间
+        }
         double ang = Math.toRadians(degree);//将角度转为弧度
 
         /**
@@ -550,7 +551,7 @@ public class ImageUtil {
             double ratio = 0.0; // 缩放比例
             File f = new File(srcImageFile);
             BufferedImage bi = ImageIO.read(f);
-            Image itemp = bi.getScaledInstance(width, height, bi.SCALE_SMOOTH);
+            Image itemp = bi.getScaledInstance(width, height, Image.SCALE_SMOOTH);
             // 计算比例
             if ((bi.getHeight() > height) || (bi.getWidth() > width)) {
                 if (bi.getHeight() > bi.getWidth()) {
@@ -598,7 +599,7 @@ public class ImageUtil {
             double ratio = 0.0; // 缩放比例
             File f = new File(srcImageFile);
             BufferedImage bi = ImageIO.read(f);
-            Image itemp = bi.getScaledInstance(width, height, bi.SCALE_SMOOTH);
+            Image itemp = bi.getScaledInstance(width, height, Image.SCALE_SMOOTH);
             // 计算比例
             if ((bi.getHeight() > height) || (bi.getWidth() > width)) {
                 if (bi.getHeight() > bi.getWidth()) {
@@ -617,14 +618,15 @@ public class ImageUtil {
                 Graphics2D g = image.createGraphics();
                 g.setColor(Color.white);
                 g.fillRect(0, 0, width, height);
-                if (width == itemp.getWidth(null))
+                if (width == itemp.getWidth(null)) {
                     g.drawImage(itemp, 0, (height - itemp.getHeight(null)) / 2,
                             itemp.getWidth(null), itemp.getHeight(null),
                             Color.white, null);
-                else
+                } else {
                     g.drawImage(itemp, (width - itemp.getWidth(null)) / 2, 0,
                             itemp.getWidth(null), itemp.getHeight(null),
                             Color.white, null);
+                }
                 g.dispose();
                 itemp = image;
             }
