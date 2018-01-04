@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class OneServlet extends HttpServlet {
+
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         System.out.println("OneServlet...");
@@ -18,6 +20,7 @@ public class OneServlet extends HttpServlet {
         response.getWriter().println(username);
     }
 
+    @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //		response.setContentType("text/html;charset=gbk");
