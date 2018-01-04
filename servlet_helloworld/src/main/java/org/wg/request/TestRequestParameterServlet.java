@@ -14,12 +14,14 @@ import java.util.Map;
  */
 public class TestRequestParameterServlet extends HttpServlet {
 
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         System.out.println("GET: " + request.getParameter("xxx"));
         System.out.println("GET: " + request.getParameter("yyy"));
     }
 
+    @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");

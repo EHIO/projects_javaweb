@@ -10,6 +10,7 @@
     <base href="<%=basePath%>">
 
     <title>My JSP 'index.jsp' starting page</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
@@ -22,5 +23,7 @@
 
 <body>
 This is my JSP page. <br>
+<a href="testRequest.html">testRequest.html</a> <br>
+<a href="/request/RequestServlet?name=x">RequestServlet</a>
 </body>
 </html>

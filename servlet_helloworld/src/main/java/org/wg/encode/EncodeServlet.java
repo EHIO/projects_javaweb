@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class EncodeServlet extends HttpServlet {
+
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         /*
@@ -32,7 +34,12 @@ public class EncodeServlet extends HttpServlet {
 		 * 2. 使用getParameter()来获取参数
 		 */
         request.setCharacterEncoding("utf-8");
-        response.setContentType("text/html; charset=utf-8"); // 设置响应编码
+        // 这句话的意思，是让浏览器用utf-8来解析返回的数据
+        // response.setHeader("Content-type", "text/html;charset=UTF-8");
+        // 这句话的意思，是告诉servlet用UTF-8转码，而不是用默认的ISO8859
+        // response.setContentType("text/html;charset=UTF-8");
+        // 设置响应编码
+        response.setContentType("text/html; charset=utf-8");
         String username = request.getParameter("username");
         System.out.println(username);
         response.getWriter().println(username);

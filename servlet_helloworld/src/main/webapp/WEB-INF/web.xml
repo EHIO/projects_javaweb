@@ -72,22 +72,16 @@
         <servlet-name>HServlet</servlet-name>
         <url-pattern>/request/HServlet</url-pattern>
     </servlet-mapping>
+
     <servlet>
-        <servlet-name>IServlet</servlet-name>
-        <servlet-class>org.wg.request.IServlet</servlet-class>
+        <servlet-name>RequestServlet</servlet-name>
+        <servlet-class>org.wg.request.RequestServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>IServlet</servlet-name>
-        <url-pattern>/request/IServlet</url-pattern>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/request/RequestServlet</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>JServlet</servlet-name>
-        <servlet-class>org.wg.request.JServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>JServlet</servlet-name>
-        <url-pattern>/request/JServlet</url-pattern>
-    </servlet-mapping>
+
     <servlet>
         <servlet-name>TestRequestParameterServlet</servlet-name>
         <servlet-class>org.wg.request.TestRequestParameterServlet</servlet-class>

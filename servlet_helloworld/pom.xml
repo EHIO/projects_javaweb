@@ -12,6 +12,16 @@
     <build>
         <!--产生的构件的文件名，默认值是${artifactId}-${version}-->
         <finalName>servlet_helloworld</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
     <dependencies>
