@@ -28,5 +28,11 @@ This is my JSP page. <br>
 <a href="upload3.jsp">上传3</a> <br>
 <a href="upload4.jsp">上传4</a> <br>
 <a href="SWFUploadPic.jsp">上传5</a>
+
+<hr />
+<a href="<c:url value='/download/xkl.jpg'/>">下载jpg</a>
+<br />
+<a href="<c:url value='/download/test.csv'/>">下载csv</a>
+<br />
 </body>
 </html>
