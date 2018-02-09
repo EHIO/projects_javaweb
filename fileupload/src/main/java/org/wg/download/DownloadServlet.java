@@ -25,7 +25,6 @@ public class DownloadServlet extends HttpServlet {
         //第二读取文件
         String filePath = getServletContext().getRealPath("/download/test.csv");
         // 为了使下载框中显示中文文件名称不出乱码！
-//		String framename = new String("友谊天长地久.mp3".getBytes("GBK"), "ISO-8859-1");
         String framename = filenameEncoding("xxx.csv", request);
         // 通过文件名称获取MIME类型
         String contentType = this.getServletContext().getMimeType(filePath);
